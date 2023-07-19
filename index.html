@@ -3,61 +3,171 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo </title>
-  <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
   <body>
-    <div class="container">
-    <h1 class ="text-center">FRAMEWORK DE CSS BOOTSTRAP</h1>
-    <p>El objetivo principal de Bootstrap es crear sitios web responsivos y orientados a los dispositivos móviles. El framework garantiza que todos los elementos de la interfaz de un sitio web funcionen de forma óptima en todos los tamaños de pantalla.
 
-        Bootstrap está disponible en dos variantes: precompilada y basada en código fuente. Los desarrolladores experimentados prefieren esta última, ya que les permite personalizar los estilos para adaptarlos a sus proyectos.
+    <!--Inicio de menu-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!--Fin de menu-->
+
+    <!--Inicio de Carrusel Imagenes-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/img1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--Fin de Carrusel Imagenes-->
+      <!--Inicio de Contenido-->
+
+      <div class="row">
+        <div class="col-md-5 col-4">
+         <hr>
+        </div>
+        <div class="col-md-2 col-6">
+            <h1 class="text-center"> Atartedeceres </h1>
+        </div>
+        <div class="col-md-5 col-2">
+            <hr>
+        </div>
+        </div>
+        <!--fin de contenido-->
+    
+        <!--Inicio de 3 fotos -->
+        <div class="row">
+            <div class=" col-md-2">
+            </div>
+    
+            <div class=" col-md-3 col-4 text-center">
+            <img src="img/img4.jpg" class="img-thumbnail rounded-circle"  alt="...">
         
-        Por ejemplo, la versión «código fuente» de Bootstrap permite acceder al puerto Sass. Esto significa que crea una hoja de estilos personalizada que importa Bootstrap, permitiéndote modificar y ampliar la herramienta según tus necesidades.
-        
-        También puedes instalar Bootstrap con un gestor de paquetes, una herramienta que gestiona y actualiza frameworks, librerías y activos.
-        
-        Algunos de los gestores de paquetes más populares son npm, Composer y Bower. Npm gestiona las dependencias del lado del servidor, mientras que Composer se centra en el front-end. Si trabajas en proyectos basados en PHP, considera usar Bower en su lugar.
-        
-        Debido a su popularidad, cada vez surgen más comunidades de Bootstrap. Estos son excelentes lugares para que los desarrolladores y diseñadores web compartan conocimientos y discutan las últimas versiones de los parches de Bootstrap.
-        
-       <h2>¿Por qué deberías usar Bootstrap?</h2> 
-        Algunos de los componentes de la interfaz de Bootstrap incluyen barras de navegación, sistemas de cuadrícula, carruseles de imágenes y botones.
-        
-        Si todavía no te convence si vale la pena probar Bootstrap, aquí tienes las ventajas de usarlo en comparación con otros frameworks de desarrollo web.
-        
-        Facilidad de uso
-        En primer lugar, Bootstrap es fácil de aprender. Debido a su popularidad, hay un montón de tutoriales y foros en línea para ayudarte a empezar.
-        
-        Una de las razones por las que Bootstrap es tan popular entre los desarrolladores y diseñadores web es que tiene una estructura de archivos sencilla. Sus archivos están compilados para facilitar el acceso y sólo se requieren conocimientos básicos de HTML, CSS y JS para modificarlos.
-        
-        También puedes utilizar los temas de los sistemas de gestión de contenidos más populares como herramientas de aprendizaje. Por ejemplo, la mayoría de los temas de WordPress se han desarrollado con Bootstrap, a los que puede acceder cualquier desarrollador web principiante.
-        
-        Para reducir el tiempo de carga de la página del sitio, Bootstrap minifica los archivos CSS y JavaScript. Además, Bootstrap mantiene la coherencia de la sintaxis entre los sitios web y los desarrolladores, lo que es ideal para los proyectos en equipo.
-        
-        <h2>Rejilla responsive</h2>
-        Bootstrap viene con un sistema de rejilla predefinido, lo que te ahorra crear uno desde cero. El sistema de rejilla consta de filas y columnas, lo que permite crear una cuadrícula dentro de la existente en lugar de introducir media queries en el archivo CSS.
-        
-        Además, el sistema de rejilla de Bootstrap hace que el proceso de ingreso de datos sea más sencillo. Contiene muchas media queries, lo que te permite definir los breakpoints personalizados de cada columna en función de las necesidades de tu proyecto web.
-        
-        La configuración por defecto suele ser más que suficiente. Después de crear una rejilla, sólo tienes que añadir contenido a los contenedores.
-        
-        El sistema de rejilla de Bootstrap tiene dos clases de contenedores para adaptarse mejor a los proyectos de escritorio y móviles: un contenedor fijo (.container) y un contenedor fluido (.container-fluid).
-        
-        La primera clase de contenedor proporciona un contenedor de ancho fijo, mientras que la segunda ofrece un contenedor de ancho completo capaz de ajustar tu proyecto a todos los tamaños de pantalla.
-        
-        Compatibilidad con los navegadores
-        Hacer que tu sitio web sea accesible a través de diferentes navegadores ayuda a reducir la tasa de rebote y a posicionarse mejor en los resultados de búsqueda. Bootstrap cumple este requisito al ser compatible con las últimas versiones de los navegadores más populares.
-        
-        A pesar de no ser compatible con navegadores menos conocidos como WebKit, los sitios web con Bootstrap deberían funcionar correctamente también en ellos. Sin embargo, puede haber limitaciones en cuanto a los modales y los desplegables en las pantallas más pequeñas.
-        
-        Sistema de imágenes de Bootstrap
-        Bootstrap gestiona la visualización de imágenes y la capacidad de respuesta con sus reglas HTML y CSS predefinidas.
-        
-        Al añadir la clase .img-responsive, las imágenes se redimensionarán automáticamente en función del tamaño de la pantalla de los usuarios. Esto beneficiará el rendimiento de tu sitio web, ya que la reducción del tamaño de las imágenes forma parte del proceso de optimización del sitio.
-        
-        Bootstrap también proporciona clases adicionales como .img-circle y .img-rounded, que ayudan a modificar la forma de las imágenes.</p>
+               <h6>Cada puesta de sol trae la promesa de un nuevo amanecer</h6> </div>
+    
+            <div class=" col-md-3 col-4 text-center " >
+                <img src="img/img4.jpg" class="img-thumbnail rounded-circle" alt="...">
+    
+            <h6>El sol se pone, pero su luz permanece</h6></div>
+    
+                <div class=" col-md-3 col-4 text-center" >
+                    <img src="img/img4.jpg" class="img-thumbnail rounded-circle" alt="...">
+                <h6>Cada puesta de sol es una oportunidad para reiniciar</h6></div>   
+        </div>
+        <div class=" col-md-2">
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <!--fin de 3 fotos-->
+    <br>
+      <!--INICIO DE CONTENIDO-->
+      <div class="row">
+        <div class="col-md-5 col-4">
+      <hr>
+        </div>
+          <div class="col-md-2 col-6">
+              <h1 class="text-center"> paisajes </h1>
+          </div>
+          <div class="col-md-5 col-2">
+              <hr>
+          </div>
+          </div>
+          <!--fin de contenido-->
+      <br>
+      <!--Imagenes con card-->
+      <div class="row">
+        <div class=" col-md-2 col-6 ">
+            
+                <img src="Img/Isla1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+    
+              <div class=" col-md-2 col-6 ">
+               
+                    <img src="Img/Isla2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+        </div>
+        
+      
+    
+      <!--Fin de Inicio con card-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
   </body>
 </html>
